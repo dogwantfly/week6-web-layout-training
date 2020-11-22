@@ -21,12 +21,12 @@ current: index
             <div class="input-group mb-1">
                 <input type="number" class="form-control py-5" placeholder="1" aria-label="amount of product" aria-describedby="basic-addon2">
                 <div class="input-group-append input-group-append-product-info">
-                    <a href="#" class="d-block input-group-text input-group-text-product-info w-100" id="basic-addon2">加入購物車</a>
+                    <a href="#" class="d-block input-group-text input-group-text-product-info w-100" id="basic-addon2" data-toggle="modal" data-target="#shoppingCartModal">加入購物車</a>
                 </div>
             </div>
 
-            <div class="mb-6 mb-lg-9">
-                <a href="#" class="fas fa-heart mr-1" data-toggle="modal" data-target="#favorateModal"></a>
+            <div class="product-info-favorate mb-6 mb-lg-9" data-toggle="modal" data-target="#favorateModal">
+                <a href="#" class="fas fa-heart mr-1" ></a>
                 加入我的收藏
             </div>
             <h3 class="h6">商品購買須知</h3>
@@ -67,6 +67,16 @@ current: index
       <div class="modal-content">
         <div class="modal-body text-primary fz-lg font-weight-bold">
             已加入我的收藏
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- Modal shopping-cart-->
+  <div class="modal fade show" id="shoppingCartModal" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-product" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-primary fz-lg font-weight-bold">
+          已加入購物車
         </div>
       </div>
     </div>
