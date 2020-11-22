@@ -7,7 +7,7 @@
 }
 .login-img{
     @include media-breakpoint-up(lg){
-        height: 730px;
+        max-height: 730px;
         object-fit: cover;
     }
 }
